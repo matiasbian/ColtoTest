@@ -18,7 +18,6 @@ public class CharacterController : MonoBehaviour
     }
 
     public void Move (float horizontal, float vertical) {
-        Debug.Log(model.speed);
         transform.Translate(new Vector2(horizontal, vertical) * model.speed * Time.deltaTime);
         model.UpdateCurrentDirection(horizontal, vertical);
         if (new Vector2(horizontal, vertical) != Vector2.zero) lastDir = new Vector2(horizontal,vertical);

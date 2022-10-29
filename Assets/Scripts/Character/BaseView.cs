@@ -15,7 +15,7 @@ public class BaseView : MonoBehaviour
     }
 
     void OnDisable () {
-        GameManager.lose += Freeze;
+        GameManager.lose -= Freeze;
         GameManager.win -= Freeze;
     }
 

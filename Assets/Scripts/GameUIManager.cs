@@ -2,9 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using TMPro;
 public class GameUIManager : MonoBehaviour
 {
     public GameObject losePanel, winPanel, gameOverPanel;
+    public TextMeshProUGUI lifes;
     
     void OnEnable () {
         GameManager.lose += OnLose;
@@ -35,6 +37,11 @@ public class GameUIManager : MonoBehaviour
     }
 
     public void GoToMainMenu () {
+        GameManager.ResetLifes();
         SceneManager.LoadScene(0);
+    }
+    
+    void Start () {
+        lifes.text = GameManager.life.ToString();
     }
 }

@@ -4,7 +4,8 @@ using UnityEngine;
 using System;
 public class GameManager : MonoBehaviour
 {
-    static int life = 2;
+    static int initialLifes = 2;
+    public static int life = 2;
     static int remainingEnemies = 10;
     public static int ENEMIES_AMOUNT = 10;
     public static Action lose;
@@ -27,5 +28,9 @@ public class GameManager : MonoBehaviour
 
     static void Win () {
         win?.Invoke();
+    }
+
+    public static void ResetLifes () {
+        life = initialLifes;
     }
 }
