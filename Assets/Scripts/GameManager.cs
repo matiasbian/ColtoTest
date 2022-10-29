@@ -8,10 +8,16 @@ public class GameManager : MonoBehaviour
     static int remainingEnemies = 10;
     public static int ENEMIES_AMOUNT = 10;
     public static Action lose;
+    public static Action win;
+    public static Action gameOver;
     
     public static void LoseLife () {
         life --;
-        lose?.Invoke();
+        if (life < 0) {
+            gameOver?.Invoke();
+        } else {
+            lose?.Invoke();
+        }
     }
 
     public static void EnemyDestroyed () {
@@ -20,6 +26,6 @@ public class GameManager : MonoBehaviour
     }
 
     static void Win () {
-
+        win?.Invoke();
     }
 }

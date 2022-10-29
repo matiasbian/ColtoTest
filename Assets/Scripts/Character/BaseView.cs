@@ -10,15 +10,16 @@ public class BaseView : MonoBehaviour
     protected virtual void Init()
     {
         controller = GetComponent<CharacterController>();
-        GameManager.lose += OnLose;
+        GameManager.lose += Freeze;
+        GameManager.win += Freeze;
     }
 
     void OnDisable () {
-        GameManager.lose -= OnLose;
+        GameManager.lose += Freeze;
+        GameManager.win -= Freeze;
     }
 
-    void OnLose () {
-        Debug.Log(this);
+    void Freeze () {
         this.enabled = false;
     }
 
