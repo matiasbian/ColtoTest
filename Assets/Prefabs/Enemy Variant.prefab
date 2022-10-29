@@ -83,6 +83,14 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5781437072709196885, guid: 6990e5dac5e46e04ba19f8aefb9e1756, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.x
+      value: 18
+      objectReference: {fileID: 0}
+    - target: {fileID: 5781437072709196885, guid: 6990e5dac5e46e04ba19f8aefb9e1756, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.y
+      value: 24
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 3667127096055110038, guid: 6990e5dac5e46e04ba19f8aefb9e1756, type: 3}
     - {fileID: 3667127096055110037, guid: 6990e5dac5e46e04ba19f8aefb9e1756, type: 3}
@@ -133,7 +141,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: a8c9c245b5bdd4b199bf53a2ffa3030d, type: 3}
+  m_Sprite: {fileID: 21300000, guid: e7be80e142bc844a285d5fd41d8ddb53, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -195,21 +203,21 @@ MonoBehaviour:
   directions:
   - name: Top
     sprites:
-    - {fileID: 21300000, guid: ca9b83cc7203044b184cfc9285dc03db, type: 3}
-    - {fileID: 21300000, guid: 17a64faf45aa847caa7f711f3f6f8479, type: 3}
-    - {fileID: 21300000, guid: b7b274517be4f4b6a81c6853761a2d1a, type: 3}
+    - {fileID: 21300000, guid: e7be80e142bc844a285d5fd41d8ddb53, type: 3}
+    - {fileID: 21300000, guid: 4d3c397ca544f415695c6692523aed0f, type: 3}
+    - {fileID: 21300000, guid: 4ce7a3378ce4344bfa60a7a3fa165ad8, type: 3}
   - name: Left
     sprites:
-    - {fileID: 21300000, guid: b3d9822519f5d4e32b7c531ae7768c55, type: 3}
-    - {fileID: 21300000, guid: 6705216d2f9a643e8a83ce226ec5ee19, type: 3}
-    - {fileID: 21300000, guid: 940e1fb71ce71491baa9148a9e0893a8, type: 3}
+    - {fileID: 21300000, guid: e7be80e142bc844a285d5fd41d8ddb53, type: 3}
+    - {fileID: 21300000, guid: 4d3c397ca544f415695c6692523aed0f, type: 3}
+    - {fileID: 21300000, guid: 4ce7a3378ce4344bfa60a7a3fa165ad8, type: 3}
   - name: Down
     sprites:
-    - {fileID: 21300000, guid: a8c9c245b5bdd4b199bf53a2ffa3030d, type: 3}
-    - {fileID: 21300000, guid: 3895b2b70ca6d4c4488060b0dc57ea43, type: 3}
-    - {fileID: 21300000, guid: 90955110abd624ea6a785ea86c38e820, type: 3}
+    - {fileID: 21300000, guid: e7be80e142bc844a285d5fd41d8ddb53, type: 3}
+    - {fileID: 21300000, guid: 4d3c397ca544f415695c6692523aed0f, type: 3}
+    - {fileID: 21300000, guid: 4ce7a3378ce4344bfa60a7a3fa165ad8, type: 3}
   - name: Right
     sprites:
-    - {fileID: 21300000, guid: 5ef220b4e58bb4a67a6c63acc97d43c4, type: 3}
-    - {fileID: 21300000, guid: 5e03c942ebcde4ecb8a79422247f0699, type: 3}
-    - {fileID: 21300000, guid: 2ca771729db924bce85319357c1b7ef2, type: 3}
+    - {fileID: 21300000, guid: e7be80e142bc844a285d5fd41d8ddb53, type: 3}
+    - {fileID: 21300000, guid: 4d3c397ca544f415695c6692523aed0f, type: 3}
+    - {fileID: 21300000, guid: 4ce7a3378ce4344bfa60a7a3fa165ad8, type: 3}

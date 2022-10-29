@@ -29,6 +29,9 @@ public class ChasingEnemy : BaseView
     public bool CanEnterInCycle (float multiplier = 1) => (Mathf.CeilToInt(Time.frameCount * Time.deltaTime * 15)) % (20 * Mathf.RoundToInt(multiplier)) == 0;
 
     void OnTriggerEnter2D (Collider2D col) {
-        if (col.transform.CompareTag("Bullet")) Destroy(gameObject);
+        if (col.transform.CompareTag("Bullet")) {
+            Destroy(gameObject);
+            GameManager.EnemyDestroyed();
+        }
     }
 }
